@@ -6,45 +6,43 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@font-face {
+  font-family: "Javassoul";
+  src: url("../lib/font/Javassoul.otf");
 }
 
-/*--------------------------------------------------------------
-# WELCOME Section
---------------------------------------------------------------*/
-section#welcome {
-  background: url("../img/p2.webp") center 5% no-repeat;
+.ff-javassoul {
+  font-family: "Javassoul";
+}
+
+.color-brown {
+  color: #b18b41;
+}
+.btn-brown {
+  background-color: #b18b41;
+}
+
+.container-sm {
+  width: 500px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+section#intro {
+  /* position: fixed; */
+  /* z-index: 9999;
+  top: 0;
+  left: 0; */
   width: 100%;
   height: 100vh;
+  background: url("../img/bg.jpg") center no-repeat;
   background-size: cover;
-  position: relative;
-
-  z-index: 1;
-}
-section#welcome .intro-info {
-  position: absolute;
-  bottom: 10%;
-  left: 0;
-  right: 0;
-}
-@media screen and (max-width: 568px) {
-  section#welcome .intro-info h1 {
-    font-size: 4em;
-  }
-}
-/*--------------------------------------------------------------
-# Intro Section
---------------------------------------------------------------*/
-
-#intro {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background: url("../img/p1.webp") center no-repeat;
-  background-size: cover;
-  /* padding: 350px 0 100px 0; */
 }
 
 #intro .intro-info {
@@ -53,250 +51,23 @@ section#welcome .intro-info {
   left: 0;
   right: 0;
 }
-#intro .intro-info h1 {
-  position: absolute;
-  color: #fff;
-  bottom: 95%;
-  left: 0;
-  right: 0;
+#intro .intro-info footer h1 {
+  color: #b18b41;
+  font-size: 9rem;
 }
-
+#intro .intro-info footer p {
+  color: #ddd;
+  font-size: 1.2rem;
+}
+#intro .intro-info p {
+  color: #fff;
+  font-size: 1.5rem;
+}
 @media screen and (max-width: 568px) {
-  #intro .intro-info h1 {
+  #intro .intro-info footer h1 {
     font-size: 4em;
   }
 }
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# SECTION COUPLE
---------------------------------------------------------------*/
-
-#couple {
-  background: url("../img/bg-couple.jpg");
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* #couple::after {
-  content: "";
-  position: absolute;
-  background: url(../img/flower-icon.png);
-  top: -5%;
-  left: -5%;
-  width: 300px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 999;
-  animation: shakeAndScale 1.5s infinite alternate;
-}
-#couple::before {
-  content: "";
-  position: absolute;
-  background: url(../img/flower-right.png);
-  bottom: -5%;
-  right: -5%;
-  width: 300px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 999;
-  animation: shakeAndScale 1.5s infinite alternate;
-} */
-
-/*--------------------------------------------------------------
-# AR RUM
---------------------------------------------------------------*/
-
-section#ar-rum {
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  display: flex;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-section#ar-rum h1 {
-  font-size: 1.5em;
-}
-section#ar-rum p {
-  font-size: 0.9em;
-}
-
-section#couple {
-  width: 100%;
-}
-.bingkai-top-left {
-  position: absolute;
-  top: -5%;
-  left: -3%;
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.bg-pink {
-  /* background-color: #f8cdc6; */
-  /* background-color: #fbe6e2; */
-  background-color: #fdeded;
-}
-
-.bg-pink-dark {
-  background-color: #f52b41;
-}
-
-.btn-pink {
-  color: #fff;
-  /* background-color: #fba393; */
-  background-color: #f63050;
-}
-.color-pink {
-  /* color: #fba393; */
-  color: #f63050;
-}
-.color-dark2 {
-  color: #344668;
-}
-
-.bingkai-top-right {
-  position: absolute;
-  top: -5%;
-  right: -3%;
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.bingkai-bottom-right {
-  position: absolute;
-  bottom: -5%;
-  right: -3%;
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.bingkai-bottom-left {
-  position: absolute;
-  bottom: -5%;
-  left: -3%;
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@media screen and (max-width: 768px) {
-  section#ar-rum .aside-top {
-    width: 150px;
-    height: 150px;
-  }
-  section#ar-rum .aside-bottom {
-    width: 150px;
-    height: 150px;
-  }
-  section#couple {
-    padding: 6rem 0;
-  }
-
-  .img-absolute-responsive-top-left {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: -3%;
-    left: -5%;
-  }
-  .img-absolute-responsive-top-right {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: -3%;
-    right: -5%;
-  }
-  .img-absolute-responsive-bottom-left {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    bottom: -3%;
-    left: -5%;
-  }
-  .img-absolute-responsive-bottom-right {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    bottom: -3%;
-    right: -5%;
-  }
-  .order-sm-1 {
-    order: 1;
-  }
-  .order-sm-2 {
-    order: 2;
-  }
-}
-@media screen and (min-width: 768px) {
-  section#ar-rum h1 {
-    font-size: 2em;
-  }
-  section#ar-rum p {
-    font-size: 1em;
-  }
-  .order-1 {
-    order: 1;
-  }
-  .order-2 {
-    order: 2;
-  }
-
-  .md-none {
-    display: none;
-  }
-
-  .img-absolute-responsive-top-left {
-    position: absolute;
-    top: -5%;
-    left: -5%;
-  }
-  .img-absolute-responsive-top-right {
-    position: absolute;
-    top: -5%;
-    right: -5%;
-  }
-  .img-absolute-responsive-bottom-left {
-    position: absolute;
-    bottom: -5%;
-    left: -5%;
-  }
-  .img-absolute-responsive-bottom-right {
-    position: absolute;
-    bottom: -5%;
-    right: -5%;
-  }
-
-  section#rsvp {
-    width: 100%;
-    height: 100vh;
-  }
-}
-/*--------------------------------------------------------------
-# AR RUM
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# AR RUM
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-# AR RUM
---------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -311,17 +82,4 @@ section#couple {
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
-}
-
-/*--------------------------------------------------------------
-# Responsive Media Queries
---------------------------------------------------------------*/
-
-@media (min-width: 992px) {
-}
-
-@media (max-width: 991px) {
-}
-
-@media (max-width: 767px) {
 }

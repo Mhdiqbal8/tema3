@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Javassoul";
+  src: url("../lib/font/Javassoul.otf");
+}
+
+.ff-javassoul {
+  font-family: "Javassoul";
+}
+
+#welcome {
+  margin: auto;
+  max-width: 500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("../img/bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+#welcome .welcome-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+#welcome .welcome-header h1 {
+  color: #b18b41;
+  font-size: 3rem;
+}
+#welcome .welcome-header p {
+  color: #eee;
+}
+#welcome .welcome-footer p {
+  color: #eee;
+}
+@media screen and (min-width: 500px) {
+  section#countdown .countdown-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  section#countdown .countdown-article .countdown-header h1 {
+    font-size: 2rem;
+  }
+}
+section#countdown,
+section#pengantin {
+  margin: auto;
+  max-width: 500px;
+}
+
+section#countdown .countdown-article .countdown-header h1 {
+  font-size: 4rem;
+}
+
+#thanks {
+  margin: auto;
+  max-width: 500px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#live-streaming {
+  margin: auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#live-streaming figure.card {
+  padding: 1.5rem 0;
+}
+#live-streaming figure figcaption h1 {
+  padding: 1.5rem 0;
+  font-size: 4.4rem;
+  line-height: 3.5rem;
+  color: #b18b41;
+}
+
+/* --------------- PENGANTIN =-------------------- */
+/* .pengantin-foto {
+  max-width: 300px;
+  transform: scale(1.3);
+  border: 5px solid #b18b41;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.pengantin-foto img {
+  width: 300px;
+} */
+
+/* section#pen */
+@media screen and (min-width: 500px) {
+  section#pengantin .pengantin-name {
+    font-size: 3rem;
+  }
+}
+
+section#pengantin .pengantin-name {
+  font-size: 3.3rem;
+  color: #b18b41;
+}
+section#pengantin header h1 {
+  font-size: 4rem;
+  color: #b18b41;
+}
+section#pengantin .pengantin-name-putra {
+  font-size: 1.2rem;
+}
+section#pengantin .pengantin-name-ortu {
+  font-size: 1.2rem;
+}
+.pengantin-canvas {
+  max-width: 400px;
+  height: 200px;
+}
+.pengantin-image {
+  max-width: 90%;
+  border: 5px solid #b18b41;
+  border-radius: 2%;
+}
+/* --------------- PLACEMENY =-------------------- */
+#place {
+  margin: auto;
+  max-width: 500px;
+  /* height: 600px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#place article.card {
+  border-top-right-radius: 6rem;
+}
+#place article header h1 {
+  font-size: 3rem;
+}
+#place article header hr {
+  border: none;
+  height: 3px;
+  width: 50%;
+  background-color: #b18b41;
+}
+#place article footer h2 {
+  font-size: 4rem;
+}
+#place article footer span {
+  font-size: 1.5rem;
+  font-family: normal;
+}
+#place article footer p {
+  font-size: 1.5rem;
+}
+#place article footer small {
+  font-size: 1rem;
+}
+/* --------------- PLACEMENY =-------------------- */
+.heading-judul {
+  font-size: 4rem;
+  color: #b18b41;
+}
+/* OUR MOMENTS */
+
+section#our-moments {
+  margin: auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* --------------  STORY --------------------- */
+
+@media screen and (min-width: 500px) {
+}
+
+section#gift header h1 {
+  font-size: 4rem;
+}
+
+section#story,
+section#gift,
+section#rsvp {
+  max-width: 500px;
+  margin: auto;
+}
+
+.story span,
+.gallery span,
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.story span .gallery {
+  background-color: #f5f5f5;
+}
+
+/* --------------  STORY --------------------- */
+
+/* -------------- FOOTE ------------- */
+footer#thanks {
+  background-image: url("../img/bg.jpg");
+  max-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+/* -------------- FOOTE ------------- */
+
+@media screen and (min-width: 500px) {
+  #live-streaming figure.card {
+    padding: 1.5rem 0;
+  }
+  #live-streaming figure figcaption h1 {
+    padding: 0;
+    font-size: 3rem;
+    color: #b18b41;
+  }
+  #live-streaming figure figcaption p {
+    font-size: 1rem;
+  }
+}

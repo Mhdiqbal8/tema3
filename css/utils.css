@@ -80,6 +80,10 @@
   background-color: #dce5a5;
   /* background-color: #cce71e; */
 }
+.btn-brown {
+  background-color: #b18b41;
+  color: #eee;
+}
 /* ==================================== */
 .attachment {
   content: "";
